@@ -1,5 +1,5 @@
-#MPFinder  
-MPFinder is a geolocation tool that pulls in data from postcode APIs and UK Parliament to display contact details for your local MP.  
+#MCFinder  
+MCFinder is a geolocation tool that pulls in data from the Sunlight Foundation to display contact details for your local Senator or Representative. It is based on [MPFinder](http://github.com/hyl/MPFinder), except it is probably a better starting point for your own country as there isn't as much country-specific code. 
 
 ##Adapting to your country  
 *Note: This **really** wasn't designed with open-sourcing or other countries in mind. There may be demons...*  
@@ -7,4 +7,4 @@ MPFinder is a geolocation tool that pulls in data from postcode APIs and UK Parl
 2) Find an API to use for post/zip codes. We convert the lat/long provided by local geolocation APIs into a postcode using a service based on UK-Postcodes.  
 3) Pop the URLs into the config array. Update the structure of the URLs throughout main.js as required (Cmd+F latlangBaseUrl and update, for example)  
 4) Update the data rendering  
-5) Once it's working, tweet me a link! (@mightyshakerjnr)
+5) Once it's working, tweet me a link! ([@mightyshakerjnr](http://twitter.com/mightyshakerjnr)
