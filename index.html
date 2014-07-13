@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MCFinder</title>
+        <meta name="description" content="Find your Representative.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+          <header>
+            <h1>MCFinder</h1>
+            <p class="localisation"><i>Find your local Members of Congress.</i></p>
+            <p id="welcome"></p>
+            <div class="search">
+            </div>
+          </header>
+          <div class="waiting">
+            <div class="spinner">
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
+            </div>
+          </div>
+          <div class="results">
+          </div>
+        </div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=1448706122068148&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="shareables">
+          <div class="share s-one">
+            <a href="https://twitter.com/share" class="twitter-share-button twitter-count-vertical" data-text="Here's where you can find and contact your Congress representatives:" data-url="http://jamiehoyle.com/congress" data-count="vertical">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </div>
+          <div class="share s-two">
+            <div class="fb-share-button" data-href="http://jamiehoyle.com/congress" data-type="box_count"></div>
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=314313972031391";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+          </div>
+        </div>
+        <footer>
+          <p>This tool was built by <a class="credit" href="http://twitter.com/penmanross">Ross Penman</a> and <a class="credit" href="http://twitter.com/mightyshakerjnr">Jamie Hoyle</a>, based on <a class="credit" href="https://sunlightlabs.github.io/congress/">Sunlight Congress API</a> data.</p>
+          <p>Your location data is used only to find your zip and display the relevant representative. At no point do we save your location data.</p>
+        </footer>
+        <!-- scripts -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- gosquared -->
+        <script>
+        !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+        d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+        insertBefore(d,q)}(window,document,'script','_gs');
+
+        _gs('GSN-759816-L');
+      </script>
+    </body>
+</html>

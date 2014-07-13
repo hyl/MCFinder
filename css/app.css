@@ -1,0 +1,254 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: auto;
+  text-align: center;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+article {
+  display: none;
+  width: 400px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: left;
+  padding: 10px 25px;
+  color: #fff;
+  color: rgba(255,255,255,0.5);
+  overflow: auto;
+  border-radius: 10px;
+}
+
+article .button {
+  width: 90%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 100px;
+}
+
+article .button:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,0.8) !important;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.localisation {
+  margin-top: 5px;
+}
+
+.moreInformation {
+  display: none;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.moreInfo {
+  color: #fff;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 300;
+  font-size: 22px;
+  margin-left: 5%;
+}
+
+.callMP {
+  background: #9b59b6;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+.emailMP {
+  background: #8e44ad;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+#mpName {
+  text-align: center;
+}
+
+article a {
+  color: #34495e;
+  color: rgba(0,0,0,0.5);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* manual postcode work */
+#postcodeManual {
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid #95a5a6;
+  padding: 15px;
+  font-size: 23px;
+  font-weight: 200;
+  color: #000;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+#submitManual {
+  height: 100%;
+  background-color: #95a5a6;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid #95a5a6;
+  padding: 15px;
+  font-size: 23px;
+  font-weight: 200;
+  color: #000;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+#submitManual:hover {
+  background: #95a5a6;
+}
+
+#postcodeManual:focus {
+  outline: none;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.credit {
+  color: #2ecc71;
+  text-decoration: none;
+}
+
+.credit:hover {
+  text-decoration: underline;
+}
+
+#permalink a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #34495e;
+}
+
+#permalink a:hover {
+  text-decoration: underline;
+}
+
+/* democrat */
+.partyD {
+  background: #3498db;
+}
+
+.partyR {
+  background: #e74c3c;
+}
+
+/* share */
+.shareables {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  display: none;
+  margin-top: 30px;
+  height: 80px;
+}
+.shareables .share {
+    height: 100px;
+    float: left;
+    width: 50%;
+    z-index: 10;
+    text-align: center;
+}
+
+.shareables .share i {
+    font-size: 70px;
+    margin-left: 15px;
+}
+
+.waiting {
+  display: none;
+  text-align: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+@media (max-width: 1024px) {
+  article {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  article .button {
+    width: 90%;
+  }
+}
