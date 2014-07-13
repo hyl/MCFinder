@@ -7,4 +7,4 @@ MCFinder is a geolocation tool that pulls in data from the Sunlight Foundation t
 2) Find an API to use for post/zip codes. We convert the lat/long provided by local geolocation APIs into a postcode using a service based on UK-Postcodes.  
 3) Pop the URLs into the config array. Update the structure of the URLs throughout main.js as required (Cmd+F latlangBaseUrl and update, for example)  
 4) Update the data rendering  
-5) Once it's working, tweet me a link! ([@mightyshakerjnr](http://twitter.com/mightyshakerjnr)
+5) Once it's working, tweet me a link! ([@mightyshakerjnr](http://twitter.com/mightyshakerjnr))
